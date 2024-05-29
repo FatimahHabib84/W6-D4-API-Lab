@@ -1,3 +1,25 @@
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    background-color: white;
+}
+h3>a{
+    color: gray;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 2px solid rgb(94, 94, 94);
+    border-radius: 1rem;
+    font-size: 1em;
+}
+h3>a:hover{
+    color: darkgray;
+    border: 2px solid rgb(141, 141, 141);
+    padding: 0.55rem 1.05rem;
+    font-size: 1.1em;
+}
 .container{
     display: grid;
     background-color: whitesmoke;
@@ -10,6 +32,7 @@ div{
     box-shadow: 3px 3px 10px black;
     cursor: pointer;
     background-color: white;
+    /* position: fixed; */
 }
 h2 , p {
     text-align: center;
@@ -62,6 +85,9 @@ h1{
         margin: auto;
     }
     h1{
+        grid-column: 1/4;
+    }
+    header{
         grid-column: 1/4;
     }
 }
