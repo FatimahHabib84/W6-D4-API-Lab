@@ -17,6 +17,7 @@ async function postMethod(){
         },
     })
     let data = await res.json()
+    window.location.reload()
 }
 async function getMethod(){
     let res = await fetch(url)
